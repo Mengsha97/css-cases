@@ -1,0 +1,310 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color:white;
+}
+.container{
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.case-item{
+  width: 500px;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* case 1 */
+.case-item:nth-child(1){
+  background-image: url('../images/bg-item-1.png');
+  background-size: cover;
+}
+
+.absolute-avatar-container{
+  position: relative;
+  width: 174px;
+  height: 72px;
+}
+
+.absolute-avatar{
+  width: 64px;
+  height: 64px;
+  background-size: cover;
+  border-radius: 36px;
+  border: 4px solid #c6343b;
+  position: absolute;
+  top: 0;
+}
+
+.absolute-avatar:nth-child(1){
+  background-image: url('../images/avatar1.jpeg');
+  left: 0;
+  border-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+  top: 4px;
+}
+
+.absolute-avatar:nth-child(2){
+  background-image: url('../images/avatar2.jpeg');
+  left: 56px;
+}
+
+.absolute-avatar:nth-child(3){
+  background-image: url('../images/avatar3.jpeg');
+  left: 102px;
+}
+
+/* case 2 */
+
+.case-item:nth-child(2){
+  background-image: url('../images/star-back.jpg');
+  background-repeat: repeat;
+  background-size: 50% auto;
+}
+
+.challenge-card {
+  width: 100%;
+  height: 411px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challenge-card-item {
+  background: #fff0ba;
+  border: 6px solid #ffffff;
+  box-shadow: 0px 10px 20px rgba(167, 92, 23, 0.25);
+  border-radius: 20px;
+}
+
+.challenge-card-item-empty {
+  width: 202px;
+  height: 367px;
+  position: absolute;
+  z-index: 2;
+}
+
+.challenge-card-item-left {
+  transform: rotate(-2.68deg);
+  right: 44%;
+}
+
+.challenge-card-item-right {
+  transform: rotate(2.68deg);
+  left: 44%;
+}
+
+.challenge-card-item-mid {
+  width: 276px;
+  height: 411px;
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* case 3 */
+
+.case-item:nth-child(3){
+  background-image: url('../images/star-back.jpg');
+  background-repeat: repeat;
+  background-size: 50% auto;
+}
+
+.challenge-progress-bar-container {
+  width: 354px;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #ff823c;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+.challenge-progress-bar-body {
+  position: relative;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.challenge-progress-bar-item {
+  position: relative;
+  color: #ff823c;
+}
+
+.challenge-progress-bar-cur {
+  display: inline-block;
+  position: absolute;
+  left: -22px;
+  bottom: -12px;
+  width: 44px;
+  height: 44px;
+  border: 6px solid #ff823c;
+  border-radius: 22px;
+  box-sizing: border-box;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.challenge-progress-bar-pass {
+  background-color: #ff823c;
+  color: white;
+}
+
+.challenge-progress-bar-pass-text {
+  color: white;
+}
+
+.challenge-progress-bar-start {
+  width: 22px;
+  height: 100%;
+  border-top-left-radius: 22px;
+  border-bottom-left-radius: 22px;
+}
+
+.challenge-progress-bar-end {
+  width: 22px;
+  height: 100%;
+  border-top-right-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.challenge-progress-bar-bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  background-color: #ff823c;
+}  
+
+.challenge-progress-bar-main {
+  width: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* case 4 */
+
+.case-item:nth-child(4){
+  background-color: white;
+}
+
+.chart-container{
+  position: relative;
+  width: 390px;
+  height: 321px;
+}
+
+.chart-line{
+  width: 390px;
+  height: 2px;
+  background-color: #F2F2F2;
+  position: absolute;
+  left: 0;
+}
+
+.chart-line:nth-child(1){
+  top: -2px;
+}
+
+.chart-line:nth-child(2){
+  top: 138px;
+}
+
+.chart-main{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.chart-item{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-column{
+  width: 44px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chart-column p{
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  padding-top: 11px;
+  line-height: 1;
+}
+
+.chart-column img{
+  width: 36px;
+  height: 36px;
+  padding-bottom: 4px;
+}
+
+.chart-column-neutral{
+  background-color: #19C442;
+}
+
+.chart-column-positive{
+  background: #FF6F22;
+}
+
+.chart-column-negative{
+  background: #299BE1;
+}
+
+.chart-column-null{
+  background: #CFCFCF;
+}
+
+.chart-date{
+  width: 36px;
+  height: 36px;
+  text-align: center;
+  color: #333333;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 36px;
+  margin-top: 5px;
+}
+
+.chart-date-cur{
+  color: white;
+  background-color: #2D2F33;
+  border-radius: 8px;
+}
